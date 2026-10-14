@@ -1,26 +1,212 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* =========================================================
+   DOM FERNANDO REFRIGERAÇÕES
+   Design System — Tailwind CSS v4
+   ========================================================= */
 
 :root {
+  color-scheme: light;
+
+  /* Identidade visual */
+  --brand-navy: #0b2e55;
+  --brand-navy-deep: #061b30;
+  --brand-navy-soft: #123f6b;
+
+  --brand-ice: #73d0e8;
+  --brand-ice-light: #a9e7f4;
+  --brand-ice-strong: #38bfe6;
+
+  --brand-gold: #c8a85b;
+  --brand-gold-light: #f5e6b5;
+  --brand-gold-soft: #e7d18b;
+
+  /* Cores semânticas */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: var(--brand-navy);
+
+  --primary: var(--brand-navy);
+  --primary-hover: var(--brand-navy-soft);
+  --primary-foreground: #ffffff;
+
+  --secondary: var(--brand-ice);
+  --secondary-hover: #48b7d8;
+  --secondary-foreground: var(--brand-navy-deep);
+
+  --accent: var(--brand-gold);
+  --accent-foreground: var(--brand-navy-deep);
+
+  /* Superfícies */
+  --surface: #f4f9fc;
+  --surface-raised: #ffffff;
+  --surface-muted: #eaf4f9;
+  --surface-dark: var(--brand-navy-deep);
+
+  /* Textos */
+  --text-primary: var(--brand-navy);
+  --text-secondary: #54718d;
+  --text-inverse: #f7fbff;
+
+  /* Bordas e estados */
+  --border: #d4e5ef;
+  --border-strong: #a9c8da;
+
+  --success: #16856b;
+  --warning: #b98520;
+  --error: #b42318;
+
+  --muted: #eaf4f9;
+  --muted-foreground: #54718d;
+
+  /* Espaçamento e largura */
+  --page-gutter: clamp(1.25rem, 5vw, 5rem);
+  --section-space: clamp(4rem, 8vw, 7rem);
+  --content-max: 80rem;
+
+  /* Bordas, sombras e tipografia */
+  --radius-card-base: 1rem;
+  --radius-control-base: 999px;
+
+  --shadow-soft-value: 0 12px 36px rgb(11 46 85 / 8%);
+  --shadow-card-value: 0 18px 48px rgb(6 27 48 / 12%);
+
+  --font-body: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  --font-code: var(--font-geist-mono), 'SFMono-Regular', Consolas, monospace;
 }
 
+/* Tokens disponíveis como utilities do Tailwind */
 @theme inline {
+  /* Base */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Primary */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+
+  /* Secondary */
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  /* Accent */
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  /* Brand */
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-deep: var(--brand-navy-deep);
+  --color-brand-navy-soft: var(--brand-navy-soft);
+
+  --color-brand-ice: var(--brand-ice);
+  --color-brand-ice-light: var(--brand-ice-light);
+  --color-brand-ice-strong: var(--brand-ice-strong);
+
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-light: var(--brand-gold-light);
+  --color-brand-gold-soft: var(--brand-gold-soft);
+
+  /* Surfaces */
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-dark: var(--surface-dark);
+
+  /* Text */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-inverse: var(--text-inverse);
+
+  /* Borders and states */
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+
+  /* Typography */
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-code);
+
+  /* Radius and shadows */
+  --radius-card: var(--radius-card-base);
+  --radius-control: var(--radius-control-base);
+
+  --shadow-soft: var(--shadow-soft-value);
+  --shadow-card: var(--shadow-card-value);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* =========================================================
+   Base global
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
+  min-height: 100vh;
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--brand-ice);
+  color: var(--brand-navy-deep);
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand-ice-strong);
+  outline-offset: 3px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Respeita usuários que preferem movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

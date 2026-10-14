@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+DOM FERNANDO REFRIGERAÇÃO
+COPY CRIADA ATÉ AGORA
+Versão de trabalho — copy provisória, ainda sujeita à confirmação dos serviços e informações do cliente.
 
-## Getting Started
+==================================================
 
-First, run the development server:
+1. HERO — SEÇÃO PRINCIPAL
+   \==================================================
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Identificação:
+DOM FERNANDO REFRIGERAÇÃO
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Título principal:
+Climatização profissional para empresas que exigem qualidade.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Texto de apoio:
+Soluções em instalação, manutenção e serviços técnicos em sistemas de ar-condicionado, com 17 anos de experiência profissional.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+CTA principal:
+Solicitar atendimento
 
-## Learn More
+CTA secundário:
+Conhecer serviços
 
-To learn more about Next.js, take a look at the following resources:
+Indicadores de confiança:
+17+ anos de experiência
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Atendimento
+residencial e empresarial
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Texto sobre a imagem:
+EXPERIÊNCIA & QUALIDADE
+Soluções em climatização.
 
-## Deploy on Vercel
+Texto alternativo provisório da imagem:
+Profissional realizando serviço de climatização.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+================================================== 2. HEADER — CABEÇALHO
+==================================================
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Marca provisória:
+DF
+DOM FERNANDO
+REFRIGERAÇÃO
+
+Links de navegação:
+Serviços
+Experiência
+Sobre
+
+CTA para desktop:
+Fale conosco
+
+CTA para celular:
+WhatsApp
+
+Texto alternativo de acessibilidade da marca:
+Dom Fernando Refrigeração - início
+
+Observação:
+“DF” é apenas um monograma provisório para a interface, não um logotipo final.
+
+================================================== 3. ESTRUTURA DE CONTEÚDO PLANEJADA
+==================================================
+
+Ordem sugerida das seções:
+
+1. Cabeçalho
+2. Hero / apresentação principal
+3. Faixa de autoridade: 17 anos de experiência
+4. Serviços
+5. Atendimento corporativo
+6. Diferenciais
+7. Sobre Fernando
+8. Chamada final para contato
+
+================================================== 4. COPY/IDEIAS DE SEÇÕES AINDA NÃO FINALIZADAS
+==================================================
+
+Experiência:
+Apresentar os 17 anos de experiência profissional de Fernando.
+
+Serviços:
+
+Atendimento corporativo:
+
+Diferenciais:
+
+- 17 anos de experiência profissional
+- Qualidade no serviço
+- Garantia, com condições a confirmar
+
+Sobre Fernando:
+profissional responsável, com experiencia real em grandes empresas, conhecimento abrangente na área de refrigeração em geral e automação de sistemas de ar condicionado!
+
+Chamada final:
+Convidar o visitante a solicitar atendimento pelo WhatsApp.
+
+================================================== 5. SERVIÇOS MENCIONADOS PELO CLIENTE — PRECISAM DE CONFIRMAÇÃO
+==================================================
+
+Fernando mencionou:
+
+- automação em sistemas de refrigeração
+- Limpeza de ar-condicionado
+- Manutenção / “preventiva”
+- Instalação de ar-condicionado
+- Serviços em sistemas VRF
+- Reparo de placas eletrônicas inverter
+- Pré-instalação / infraestrutura
+
+================================================== 6. DIREÇÃO DE TOM E POSICIONAMENTO
+==================================================
+
+- Profissional, técnico, claro e confiável.
+- Voltado a empresas, sem excluir clientes residenciais.
+- Valorizar qualidade, experiência e garantia, sem exageros publicitários.
+- Preferir fotos reais de Fernando e dos serviços, se disponíveis.
+- Não apresentar empresas onde Fernando trabalhou como clientes da Dom Fernando sem confirmação.
+- CTA principal pensado para levar o visitante ao contato pelo WhatsApp.
+
+FIM DO DOCUMENTO
