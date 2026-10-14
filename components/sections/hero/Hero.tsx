@@ -66,23 +66,39 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap items-center gap-5 border-t border-white/15 pt-6 sm:mt-9 sm:gap-7 lg:mt-7">
-            <div className="flex items-center gap-3">
-              <span className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <div className="mt-8 grid grid-cols-2 gap-3 border-t border-white/15 pt-6 sm:mt-9 sm:gap-5 lg:mt-7">
+            {/* Experiência */}
+            <div className="flex min-w-0 items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.06] p-3.5 backdrop-blur-sm sm:gap-4 sm:p-4">
+              <span className="shrink-0 text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 17<span className="text-brand-ice-strong">+</span>
               </span>
-              <span className="max-w-24 text-xs leading-5 text-white/65">anos de experiência</span>
+
+              <div className="min-w-0">
+                <span className="block text-[11px] leading-4 text-white/65 sm:text-xs sm:leading-5">
+                  Anos de
+                </span>
+                <strong className="block text-xs leading-4 font-semibold text-white sm:text-sm sm:leading-5">
+                  experiência
+                </strong>
+              </div>
             </div>
 
-            <div className="hidden h-10 w-px bg-white/20 sm:block" />
-
-            <div className="flex items-center gap-3">
-              <span aria-hidden="true" className="text-brand-ice-strong text-2xl">
+            {/* Especialidade */}
+            <div className="flex min-w-0 items-center gap-2.5 rounded-2xl border border-white/10 bg-white/[0.06] p-3.5 backdrop-blur-sm sm:gap-3 sm:p-4">
+              <span
+                aria-hidden="true"
+                className="text-brand-ice-strong shrink-0 text-2xl sm:text-3xl"
+              >
                 ◈
               </span>
-              <div className="flex flex-col">
-                <strong className="text-sm font-semibold text-white">VRF e automação</strong>
-                <span className="text-xs text-white/65">residencial e empresarial</span>
+
+              <div className="min-w-0">
+                <strong className="block text-xs leading-4 font-semibold text-white sm:text-sm sm:leading-5">
+                  VRF e automação
+                </strong>
+                <span className="mt-1 block text-[10px] leading-4 text-white/65 sm:text-xs sm:leading-5">
+                  Residencial e empresarial
+                </span>
               </div>
             </div>
           </div>

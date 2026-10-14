@@ -15,19 +15,19 @@ const navigation = [
 export default function Header() {
   return (
     <header className="bg-background/80 sticky top-0 z-50 w-full border-b border-white/60 shadow-[0_4px_24px_rgb(11_46_85/5%)] backdrop-blur-2xl">
-      <div className="relative mx-auto flex min-h-[68px] w-full max-w-(--content-max) items-center justify-between gap-2 px-3 py-2 sm:min-h-[76px] sm:gap-4 sm:px-6 lg:px-[var(--page-gutter)]">
+      <div className="relative mx-auto flex min-h-[72px] w-full max-w-(--content-max) items-center justify-between gap-2 px-3 py-2 sm:min-h-[76px] sm:gap-4 sm:px-6 lg:px-[var(--page-gutter)]">
         {/* Logo */}
         <Link
           href="/"
           aria-label="Dom Fernando Refrigerações — página inicial"
-          className="relative z-10 min-w-0 flex-1 md:flex-none"
+          className="relative z-10 flex min-w-0 flex-1 items-center md:flex-none"
         >
           <Image
             src={logo}
             alt="Dom Fernando Refrigerações"
             priority
-            sizes="(max-width: 639px) 175px, 240px"
-            className="h-auto max-h-12 w-full max-w-[180px] object-contain object-left sm:max-h-14 sm:max-w-[240px]"
+            sizes="(max-width: 639px) 200px, 240px"
+            className="h-auto w-full max-w-[205px] object-contain object-left sm:max-w-[240px]"
           />
         </Link>
 
