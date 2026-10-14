@@ -15,7 +15,7 @@ const navigation = [
 export default function Header() {
   return (
     <header className="border-border/80 bg-background/90 sticky top-0 z-50 w-full border-b backdrop-blur-xl">
-      <div className="relative mx-auto flex h-[76px] max-w-(--content-max) items-center justify-between gap-5 px-[var(--page-gutter)]">
+      <div className="relative mx-auto flex items-center justify-between gap-5 px-[var(--page-gutter)] py-1.5">
         <Link
           href="/"
           aria-label="Dom Fernando Refrigerações — página inicial"
