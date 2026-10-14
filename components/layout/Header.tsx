@@ -60,8 +60,8 @@ export default function Header() {
             className="h-5 w-5 brightness-0 invert transition-transform duration-300 group-hover:scale-110"
           />
 
-          <span className="hidden sm:inline">Fale conosco</span>
-          <span className="sm:hidden">WhatsApp</span>
+          <span className="text-primary-foreground hidden sm:inline">Fale conosco</span>
+          <span className="text-primary-foreground sm:hidden">WhatsApp</span>
         </a>
       </div>
 
