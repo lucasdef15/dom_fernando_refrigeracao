@@ -1,66 +1,71 @@
-import React from 'react';
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import logo from '@/public/logo-dom-fernando.svg';
+import wtsIcon from '@/public/whatsapp.svg';
+
+const navigation = [
+  { label: 'Serviços', href: '#servicos' },
+  { label: 'Experiência', href: '#experiencia' },
+  { label: 'Sobre nós', href: '#sobre' },
+];
 
 export default function Header() {
   return (
-    <header className="border-b border-slate-200/80 bg-slate-50">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
-        <a
+    <header className="border-border/80 bg-background/90 sticky top-0 z-50 w-full border-b backdrop-blur-xl">
+      <div className="mx-auto flex h-[76px] max-w-(--content-max) items-center justify-between gap-5 px-[var(--page-gutter)]">
+        <Link
           href="/"
-          aria-label="Dom Fernando Refrigeração - início"
-          className="flex items-center gap-3"
+          aria-label="Dom Fernando Refrigerações — página inicial"
+          className="group flex shrink-0 items-center"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-sm font-bold text-white shadow-sm shadow-blue-600/20">
-            DF
-          </div>
+          <Image
+            src={logo}
+            alt="Dom Fernando Refrigerações"
+            priority
+            className="h-14 w-auto transition-transform duration-300 group-hover:scale-[1.02]"
+          />
+        </Link>
 
-          <div className="leading-none">
-            <span className="block text-sm font-bold tracking-tight text-slate-950">
-              DOM FERNANDO
-            </span>
+        <nav aria-label="Navegação principal" className="hidden md:block">
+          <ul className="flex items-center gap-7 lg:gap-9">
+            {navigation.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="group text-text-secondary hover:text-primary relative py-3 text-sm font-medium transition-colors duration-200"
+                >
+                  {item.label}
 
-            <span className="mt-1 block text-[10px] font-medium tracking-[0.16em] text-slate-500 uppercase">
-              Refrigeração
-            </span>
-          </div>
-        </a>
-
-        <nav aria-label="Navegação principal" className="hidden items-center gap-8 md:flex">
-          <a
-            href="#servicos"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-600"
-          >
-            Serviços
-          </a>
-
-          <a
-            href="#experiencia"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-600"
-          >
-            Experiência
-          </a>
-
-          <a
-            href="#sobre"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-blue-600"
-          >
-            Sobre
-          </a>
-
-          <a
-            href="#contato"
-            className="inline-flex min-h-11 items-center justify-center rounded-lg bg-blue-600 px-5 text-sm font-semibold text-white shadow-sm shadow-blue-600/20 transition-colors hover:bg-blue-700"
-          >
-            Fale conosco
-          </a>
+                  <span className="bg-brand-ice-strong absolute inset-x-0 bottom-1 h-0.5 origin-left scale-x-0 rounded-full transition-transform duration-300 group-hover:scale-x-100" />
+                </Link>
+              </li>
+            ))}
+          </ul>
         </nav>
 
         <a
-          href="#contato"
-          className="inline-flex min-h-11 items-center justify-center rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white shadow-sm shadow-blue-600/20 transition-colors hover:bg-blue-700 md:hidden"
+          href="https://wa.me/5516988398447"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Fale com a Dom Fernando pelo WhatsApp"
+          className="group rounded-control bg-primary text-primary-foreground shadow-soft hover:bg-primary-hover hover:shadow-card focus-visible:outline-brand-ice-strong inline-flex shrink-0 items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 sm:px-5"
         >
-          WhatsApp
+          <Image
+            src={wtsIcon}
+            alt=""
+            aria-hidden="true"
+            className="h-5 w-5 brightness-0 invert transition-transform duration-300 group-hover:scale-110"
+          />
+
+          <span className="hidden sm:inline">Fale conosco</span>
+          <span className="sm:hidden">WhatsApp</span>
         </a>
       </div>
+
+      <div className="via-brand-ice/70 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
     </header>
   );
 }

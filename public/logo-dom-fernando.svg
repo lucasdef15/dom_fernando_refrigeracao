@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" role="img" aria-labelledby="title desc">
+  <title id="title">Dom Fernando Refrigerações</title>
+  <desc id="desc">Logo com uma coroa em dourado champanhe suave acima de um floco de neve azul-gelo com seis braços ramificados, ao lado do nome Dom Fernando Refrigerações.</desc>
+  <defs>
+    <linearGradient id="ice" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#A9E7F4"/>
+      <stop offset="0.52" stop-color="#73D0E8"/>
+      <stop offset="1" stop-color="#48B7D8"/>
+    </linearGradient>
+    <linearGradient id="royalGold" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0" stop-color="#F5E6B5"/>
+      <stop offset="0.48" stop-color="#E7D18B"/>
+      <stop offset="1" stop-color="#C8A85B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Coroa: dourado real suave, com acabamento acetinado -->
+  <g transform="translate(18 9)">
+    <path d="M22 45 L12 20 L37 34 L60 7 L82 34 L107 20 L97 45 Z"
+          fill="url(#royalGold)" stroke="#C8A85B" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M24 51 Q60 59 95 51 L92 59 Q60 67 27 59 Z" fill="#D8BE76"/>
+    <circle cx="12" cy="18" r="4.8" fill="#F5E6B5" stroke="#C8A85B" stroke-width="1"/>
+    <circle cx="60" cy="6" r="5.8" fill="#F5E6B5" stroke="#C8A85B" stroke-width="1"/>
+    <circle cx="107" cy="18" r="4.8" fill="#F5E6B5" stroke="#C8A85B" stroke-width="1"/>
+  </g>
+
+  <!-- Floco de neve de seis braços com ramificações, sem pontas de seta -->
+  <g transform="translate(78 126)" fill="none" stroke="url(#ice)" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Seis braços principais -->
+    <path d="M0 0 L0 -45 M0 0 L39 -22.5 M0 0 L39 22.5 M0 0 L0 45 M0 0 L-39 22.5 M0 0 L-39 -22.5"/>
+    <!-- Ramificações do braço superior -->
+    <path d="M0 -28 L-9 -37 M0 -28 L9 -37"/>
+    <!-- Ramificações do braço inferior -->
+    <path d="M0 28 L-9 37 M0 28 L9 37"/>
+    <!-- Ramificações dos braços diagonais -->
+    <path d="M24 -14 L24 -25 M24 -14 L36 -14"/>
+    <path d="M24 14 L36 14 M24 14 L24 25"/>
+    <path d="M-24 14 L-24 25 M-24 14 L-36 14"/>
+    <path d="M-24 -14 L-36 -14 M-24 -14 L-24 -25"/>
+  </g>
+
+  <!-- Nome da marca -->
+  <g font-family="Montserrat, Arial, Helvetica, sans-serif">
+    <text x="160" y="105" fill="#0B2E55" font-size="49" font-weight="800" letter-spacing="-1.5">DOM FERNANDO</text>
+    <text x="164" y="149" fill="#27849A" font-size="26" font-weight="500" letter-spacing="5.2">REFRIGERAÇÕES</text>
+    <path d="M164 166 H390" stroke="#C8A85B" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+</svg>
