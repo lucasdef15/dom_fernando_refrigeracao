@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="220" viewBox="0 0 980 220" role="img" aria-labelledby="title desc">
+  <title id="title">Dom Fernando Refrigerações</title>
+  <desc id="desc">Coroa dourada acima de um floco de neve azul-gelo de seis pontas, ao lado do nome Dom Fernando Refrigerações.</desc>
+  <defs>
+    <linearGradient id="ice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A9E7F4"/>
+      <stop offset="0.5" stop-color="#73D0E8"/>
+      <stop offset="1" stop-color="#48B7D8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5E6B5"/>
+      <stop offset="0.45" stop-color="#E7D18B"/>
+      <stop offset="1" stop-color="#C8A85B"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(88 138)">
+    <g fill="none" stroke="url(#ice)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0 L0 -42 M0 -23.1 L12.12 -30.1 M0 -23.1 L-12.12 -30.1 M0 -32.76 L6.93 -36.76 M0 -32.76 L-6.93 -36.76 M0 0 L-36.37 -21 M-20.01 -11.55 L-20.01 -25.55 M-20.01 -11.55 L-32.13 -4.55 M-28.37 -16.38 L-28.37 -24.38 M-28.37 -16.38 L-35.3 -12.38 M0 0 L-36.37 21 M-20.01 11.55 L-32.13 4.55 M-20.01 11.55 L-20.01 25.55 M-28.37 16.38 L-35.3 12.38 M-28.37 16.38 L-28.37 24.38 M0 0 L-0 42 M-0 23.1 L-12.12 30.1 M-0 23.1 L12.12 30.1 M-0 32.76 L-6.93 36.76 M-0 32.76 L6.93 36.76 M0 0 L36.37 21 M20.01 11.55 L20.01 25.55 M20.01 11.55 L32.13 4.55 M28.37 16.38 L28.37 24.38 M28.37 16.38 L35.3 12.38 M0 0 L36.37 -21 M20.01 -11.55 L32.13 -4.55 M20.01 -11.55 L20.01 -25.55 M28.37 -16.38 L35.3 -12.38 M28.37 -16.38 L28.37 -24.38"/>
+    </g>
+    <circle r="5" fill="#F7FBFF" stroke="#48B7D8" stroke-width="2"/>
+
+    <g transform="translate(0 -92)">
+      <path d="M-44 16 L-36 -6 L-16 6 L0 -24 L16 6 L36 -6 L44 16 Z"
+            fill="url(#gold)" stroke="#C8A85B" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M-40 18 H40 v5.5 c0 2.6-2.2 4.6-5 4.6 H-35 c-2.8 0-5-2-5-4.6 Z" fill="#D4BC74"/>
+      <circle cx="-36" cy="-8" r="3.6" fill="#F5E6B5" stroke="#C8A85B" stroke-width="0.9"/>
+      <circle cx="0" cy="-26" r="4.3" fill="#F5E6B5" stroke="#C8A85B" stroke-width="0.9"/>
+      <circle cx="36" cy="-8" r="3.6" fill="#F5E6B5" stroke="#C8A85B" stroke-width="0.9"/>
+    </g>
+  </g>
+
+  <g font-family="Montserrat, Arial, Helvetica, sans-serif">
+    <text x="178" y="108" fill="#0B2E55" font-size="48" font-weight="800" letter-spacing="-0.6">DOM FERNANDO</text>
+    <text x="180" y="146" fill="#27849A" font-size="18" font-weight="600" letter-spacing="5.4">REFRIGERAÇÕES</text>
+    <path d="M180 162 H424" stroke="#C8A85B" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>

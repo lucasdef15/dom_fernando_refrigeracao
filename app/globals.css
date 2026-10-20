@@ -199,6 +199,23 @@ a {
   text-decoration: none;
 }
 
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+dialog::backdrop {
+  background: rgb(6 27 48 / 90%);
+  backdrop-filter: blur(8px);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
 /* Respeita usuários que preferem movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
   *,

@@ -7,11 +7,6 @@
       <stop offset="0.5" stop-color="#73D0E8"/>
       <stop offset="1" stop-color="#48B7D8"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F5E6B5"/>
-      <stop offset="0.45" stop-color="#E7D18B"/>
-      <stop offset="1" stop-color="#C8A85B"/>
-    </linearGradient>
   </defs>
 
   <g transform="translate(88 138)">
@@ -22,11 +17,11 @@
 
     <g transform="translate(0 -92)">
       <path d="M-44 16 L-36 -6 L-16 6 L0 -24 L16 6 L36 -6 L44 16 Z"
-            fill="url(#gold)" stroke="#C8A85B" stroke-width="1.3" stroke-linejoin="round"/>
-      <path d="M-40 18 H40 v5.5 c0 2.6-2.2 4.6-5 4.6 H-35 c-2.8 0-5-2-5-4.6 Z" fill="#D4BC74"/>
-      <circle cx="-36" cy="-8" r="3.6" fill="#F5E6B5" stroke="#C8A85B" stroke-width="0.9"/>
-      <circle cx="0" cy="-26" r="4.3" fill="#F5E6B5" stroke="#C8A85B" stroke-width="0.9"/>
-      <circle cx="36" cy="-8" r="3.6" fill="#F5E6B5" stroke="#C8A85B" stroke-width="0.9"/>
+            fill="#c8a85b" stroke="#c8a85b" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M-40 18 H40 v5.5 c0 2.6-2.2 4.6-5 4.6 H-35 c-2.8 0-5-2-5-4.6 Z" fill="#c8a85b"/>
+      <circle cx="-36" cy="-8" r="3.6" fill="#c8a85b" stroke="#c8a85b" stroke-width="0.9"/>
+      <circle cx="0" cy="-26" r="4.3" fill="#c8a85b" stroke="#c8a85b" stroke-width="0.9"/>
+      <circle cx="36" cy="-8" r="3.6" fill="#c8a85b" stroke="#c8a85b" stroke-width="0.9"/>
     </g>
   </g>
 

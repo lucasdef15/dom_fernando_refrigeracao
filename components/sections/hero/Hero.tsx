@@ -1,4 +1,6 @@
 import Image from 'next/image';
+
+import { site } from '@/data/site';
 import heroImage from '@/public/hero-img.webp';
 
 export default function Hero() {
@@ -13,7 +15,7 @@ export default function Hero() {
             src={heroImage}
             alt=""
             fill
-            priority
+            preload
             sizes="(max-width: 1024px) 100vw, 70vw"
             className="object-cover object-center lg:object-[center_42%]"
           />
@@ -48,7 +50,9 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:mt-8 sm:flex-row">
             <a
-              href="#contato"
+              href={site.whatsapp.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-control bg-secondary text-secondary-foreground shadow-soft hover:bg-secondary-hover hover:shadow-card inline-flex min-h-14 items-center justify-center gap-2 px-6 py-3 text-sm font-semibold transition duration-300 hover:-translate-y-0.5 active:translate-y-0"
             >
               Solicitar atendimento
