@@ -32,9 +32,9 @@ export default function Footer() {
 
               <defs>
                 <linearGradient id="footer-ice" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#7DD3E8" />
-                  <stop offset="0.55" stop-color="#4BB8D4" />
-                  <stop offset="1" stop-color="#2A9BB8" />
+                  <stop offset="0" stopColor="#7DD3E8" />
+                  <stop offset="0.55" stopColor="#4BB8D4" />
+                  <stop offset="1" stopColor="#2A9BB8" />
                 </linearGradient>
               </defs>
 

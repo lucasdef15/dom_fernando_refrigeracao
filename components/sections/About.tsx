@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import heroImage from '@/public/hero-img.webp';
+import aboutImg from '@/public/about_img.jpg';
 
 export default function About() {
   return (
@@ -18,8 +18,8 @@ export default function About() {
           </h2>
           <div className="text-text-secondary mt-6 max-w-xl space-y-5 text-base leading-7 sm:text-lg sm:leading-8">
             <p>
-              Fernando é o profissional responsável pela Dom Fernando Refrigerações, com atuação
-              em refrigeração e automação de sistemas de ar-condicionado.
+              Fernando é o profissional responsável pela Dom Fernando Refrigerações, com atuação em
+              refrigeração e automação de sistemas de ar-condicionado.
             </p>
             <p>
               A experiência abrange manutenção, instalação, sistemas VRF e equipamentos inverter
@@ -28,10 +28,10 @@ export default function About() {
           </div>
         </div>
 
-        <div className="order-1 overflow-hidden rounded-[1.5rem] border border-border bg-surface-muted shadow-card lg:order-2">
+        <div className="border-border bg-surface-muted shadow-card order-1 overflow-hidden rounded-[1.5rem] border lg:order-2">
           <div className="relative aspect-[4/5]">
             <Image
-              src={heroImage}
+              src={aboutImg}
               alt="Profissional realizando atendimento técnico em climatização."
               fill
               sizes="(max-width: 1024px) 100vw, 42vw"
