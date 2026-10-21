@@ -41,6 +41,23 @@ function getYouTubeId(url: string): string | null {
   return null;
 }
 
+function isYouTubeShort(url: string): boolean {
+  try {
+    const parsedUrl = new URL(url);
+    const hostname = parsedUrl.hostname.replace(/^www\./, '');
+    const segments = parsedUrl.pathname.split('/').filter(Boolean);
+
+    return (
+      (hostname === 'youtube.com' ||
+        hostname === 'm.youtube.com' ||
+        hostname === 'youtube-nocookie.com') &&
+      segments[0] === 'shorts'
+    );
+  } catch {
+    return false;
+  }
+}
+
 function getYouTubeThumbnail(url: string): string {
   const videoId = getYouTubeId(url);
   return videoId
@@ -332,7 +349,15 @@ export default function Gallery() {
                   />
                 </div>
               ) : (
-                <div className="relative aspect-video max-h-full w-full sm:max-h-[70vh]">
+                <div
+                  className={`relative w-full ${
+                    isYouTubeShort(activeItem.sourceHref)
+                      ? // Shorts → vertical (9:16)
+                        'aspect-[9/16] max-h-[min(85dvh,720px)] max-w-[min(100%,420px)]'
+                      : // Vídeos normais → horizontal (16:9)
+                        'aspect-video max-h-[70vh]'
+                  }`}
+                >
                   {getYouTubeEmbedUrl(activeItem.sourceHref) ? (
                     <iframe
                       key={activeItem.id}
