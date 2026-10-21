@@ -9,7 +9,6 @@ export default function Footer() {
     <footer className="bg-brand-navy border-t border-white/10">
       <div className="mx-auto w-full max-w-(--content-max) px-3 pt-10 pb-[max(1.75rem,env(safe-area-inset-bottom))] sm:px-6 lg:px-[var(--page-gutter)] lg:pt-8 lg:pb-6">
         <div className="lg:grid lg:grid-cols-[minmax(max-content,1fr)_auto_minmax(max-content,1fr)] lg:items-center lg:gap-x-8">
-          {/* Logo */}
           <a
             href="#inicio"
             aria-label={`${site.name} — voltar ao início`}
@@ -101,38 +100,7 @@ export default function Footer() {
               </g>
             </svg>
           </a>
-
-          <nav
-            aria-label="Navegação do rodapé"
-            className="mt-8 min-w-0 lg:mt-0 lg:justify-self-center"
-          >
-            <ul className="grid w-full max-w-sm grid-cols-2 gap-x-6 gap-y-1 lg:flex lg:w-auto lg:max-w-none lg:flex-wrap lg:justify-center lg:gap-1">
-              {site.navigation.map((item) => (
-                <li key={item.href}>
-                  <a href={item.href} className="">
-                    <span className="flex min-h-11 items-center text-[15px] font-medium text-white/80 transition-colors duration-150 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7DD3E8] active:opacity-70 lg:min-h-10 lg:rounded-full lg:px-3.5 lg:text-sm lg:hover:bg-white/10 lg:hover:text-white">
-                      {item.label}
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <a
-            href={site.whatsapp.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={site.whatsapp.label}
-            className="mt-8 inline-flex h-11 w-max items-center gap-2.5 rounded-full bg-[#C9A86C] px-4 text-sm font-semibold text-[#0B1F33] shadow-sm transition-all duration-150 hover:bg-[#D4B57A] hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#7DD3E8] active:scale-[0.98] lg:mt-0 lg:justify-self-end"
-          >
-            <span className="grid h-6 w-6 place-items-center rounded-full bg-black/10">
-              <Image src={wtsIcon} alt="" aria-hidden className="h-3.5 w-3.5 brightness-0" />
-            </span>
-            Fale conosco
-          </a>
         </div>
-
         <p className="mt-8 border-t border-white/10 pt-5 text-[13px] leading-5 text-white/45 lg:mt-6">
           © {year} {site.name}. Todos os direitos reservados.
         </p>

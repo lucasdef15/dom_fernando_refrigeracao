@@ -38,7 +38,7 @@ export default function Automation() {
           <p className="mt-6 max-w-xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8">
             De splits a câmaras frias, a automação transforma o sistema de refrigeração em algo
             previsível: controla a temperatura com precisão, programa rotinas de operação e avisa
-            quando algo precisa de atenção — tudo para o equipamento trabalhar com mais eficiência e
+            quando algo precisa de atenção. Tudo para o equipamento trabalhar com mais eficiência e
             menos intervenção manual.
           </p>
           <a
